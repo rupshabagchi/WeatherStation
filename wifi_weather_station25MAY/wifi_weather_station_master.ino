@@ -1,23 +1,11 @@
 /*****************************************************************
-Phant_CC3000.ino
 Post data to SparkFun's data stream server system (phant) using
 an Arduino and the CC3000 Shield.
-Jim Lindblom @ SparkFun Electronics
-Original Creation Date: July 3, 2014
 
 This sketch uses an Arduino Uno to POST sensor readings to 
 SparkFun's data logging streams (http://data.sparkfun.com). A post
 will be initiated whenever pin 3 is connected to ground.
 
-Before uploading this sketch, there are a number of global vars
-that need adjusting:
-1. WiFi Stuff: Fill in your SSID, WiFi Passkey, and encryption
-   setting using three variables available.
-2. Phant Stuff: Fill in your data stream's public, private, and 
-data keys before uploading!
-
-This sketch requires that you install this library:
-* SFE_CC3000: https://github.com/sparkfun/SFE_CC3000_Library
 
 Hardware Hookup:
   * These components are connected to the Arduino's I/O pins:
@@ -31,17 +19,9 @@ Development environment specifics:
     IDE: Arduino 1.0.5
     Hardware Platform: RedBoard & CC3000 Shield (v10)
 
-This code is beerware; if you see me (or any other SparkFun 
-employee) at the local, and you've found our code helpful, please 
-buy us a round!
-
-Much of this code is largely based on Shawn Hymel's WebClient
-example in the SFE_CC3000 library.
-
 Distributed as-is; no warranty is given.
 *****************************************************************/
-// SPI and the pair of SFE_CC3000 include statements are required
-// for using the CC300 shield as a client device.
+
 #include <SPI.h>
 #include <SFE_CC3000.h>
 #include <SFE_CC3000_Client.h>
