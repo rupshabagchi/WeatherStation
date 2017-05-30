@@ -20,6 +20,11 @@ This project is intended to measure the real-time environment variable from mult
     * Hardware Platform: RedBoard & CC3000 Shield (v10)
     * Sensors: Grove-Digital Light Sensor, DHT22 Temperature-Humidity Sensor, 
 
-    
+ 
+## Demo
+
+Demo graph
+![alt text](https://github.com/rupshabagchi/WeatherStation/blob/master/graph.png "Graph")
+
 ## Copyright    
 Distributed as-is; no warranty is given.
